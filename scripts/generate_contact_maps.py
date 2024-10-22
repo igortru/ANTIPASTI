@@ -2,7 +2,7 @@ from Bio.PDB import PDBParser
 import numpy as np
 import os
 import sys
-
+#only sabdab files with correct header.
 def compute_distance_matrix(pdb_file, ag_agnostic=False):
     parser = PDBParser(QUIET=True)
     structure = parser.get_structure('protein', pdb_file)
